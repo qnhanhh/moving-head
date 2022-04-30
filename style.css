@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color1: #dbb7ab;
+    --color2: hsl(355,50%,85%);
+    --hair: #291e1a;
+    --beard: #4e4643;
+}
+.wrapper{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #eeebe4;
+    grid-template-columns: auto auto auto;
+}
+.head{
+    position:fixed;
+    width: 220px; 
+    /* chieu rong mat khong tinh 2 tai */
+    height: 310px;
+    /* chieu dai khuon mat */
+    background-color: var(--color1);
+    border-radius: 110px;
+    box-shadow: inset 0 60px var(--hair), inset 0 -40px var(--beard);
+}
+.head::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 220px;
+    height: 220px;
+    background-color: var(--color1);
+    border-radius: 60px 60px 110px 110px;
+}
+.ear{
+    position: absolute;
+    top: 127px;
+    width: 55px;
+    height: 55px;
+    background-color: var(--color1);
+    border-radius: 50%;
+}
+.ear_left{
+    left: -28px;
+}
+.ear_right{
+    right: -28px;
+}
