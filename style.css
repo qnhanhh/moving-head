@@ -36,6 +36,7 @@
     height: 220px;
     background-color: var(--color1);
     border-radius: 60px 60px 110px 110px;
+    z-index: 2;
 }
 .ear{
     position: absolute;
@@ -50,4 +51,41 @@
 }
 .ear_right{
     right: -28px;
+}
+.ear::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 26px;
+    height: 26px;
+    background-color: var(--color2);
+    border-radius: 50%;
+}
+.ear::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: 6px;
+    background-color: white;
+    border-radius: 50%;
+}
+.ear_left::after{
+    left: 13px;
+}
+.ear_right::after{
+    right: 13px;
+}
+.face{
+    position: absolute;
+    top: 105px;
+    width: 110px;
+    height: 165px;
+    background-color: red;
+    z-index: 3;
+    left: 55px;
+}
+.eye{
+    
 }
