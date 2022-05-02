@@ -38,6 +38,16 @@
     border-radius: 60px 60px 110px 110px;
     z-index: 2;
 }
+.head::after{
+    content: '';
+    position: absolute;
+    left: 40px;
+    width: 140px;
+    height: 35px;
+    bottom: -80px;
+    background-color: #d1c9bbbf;
+    border-radius: 50%;
+}
 .ear{
     position: absolute;
     top: 127px;
@@ -82,10 +92,97 @@
     top: 105px;
     width: 110px;
     height: 165px;
-    background-color: red;
     z-index: 3;
     left: 55px;
 }
 .eye{
-    
+    position:absolute;
+    top: 4px;
+    width: 38px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 4px;
+}
+.eye_left{
+    left: 0px;
+}
+.eye_right{
+    right: 0px;
+}
+.eye::before{
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 11px;
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.nose{
+    position: absolute;
+    top: 50px;
+    left: 23px;
+    width: 64px;
+    height: 22px;
+    background-color: var(--color2);
+    border-radius: 11px;
+}
+.nose::before{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 21px;
+    width: 22px;
+    height: 22px;
+    background-color: var(--color2);
+    border-radius: 50%;
+}
+.beard{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 90px;
+    height: 120px;
+    background-color: #000;
+    border-radius: 45px;
+}
+.beard::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 34px;
+    width: 22px;
+    height: 22px;
+    background-color: var(--color1);
+    border-radius: 50%;
+}
+.chin{
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    width:74px;
+    height: 64px;
+    background-color: var(--color1);
+    border-radius: 32px;
+}
+.chin::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    width:44px;
+    height: 20px;
+    background-color: white;
+    border-radius: 0 0 22px 22px;
+}
+.beard::after{
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 35px; 
+    width: 20px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 4px;
 }
