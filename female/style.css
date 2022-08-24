@@ -246,6 +246,7 @@
     top: 132px;
 }
 
+
 .move.bottom:hover ~ .hair::before {
     height: 35%;
 }
@@ -261,6 +262,7 @@
 .move.bottom:hover ~ .hair .ear {
     top: 122px;
 }
+
 
 .move.left:hover ~ .hair::before {
     left: 45%;
